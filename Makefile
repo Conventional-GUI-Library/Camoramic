@@ -21,9 +21,11 @@ uninstall:
 	rm -f /usr/local/bin/camoramic
 	rm -f /usr/share/glib-2.0/schemas/org.tga.camoramic.gschema.xml
 	rm -f /usr/share/locale/tr_TR/LC_MESSAGES/$(PACKAGE).mo
+	rm -f /usr/share/applications/camoramic.desktop
 	
 install: ${PACKAGE}
 	install -Dm0755 camoramic /usr/local/bin/camoramic
+	install -Dm0755 res/camoramic.desktop /usr/share/applications/camoramic.desktop
 	install -Dm0644 res/org.tga.camoramic.gschema.xml /usr/share/glib-2.0/schemas/org.tga.camoramic.gschema.xml
 	install -Dm0644 po/tr_TR/$(PACKAGE).mo /usr/share/locale/tr/LC_MESSAGES/$(PACKAGE).mo
 	glib-compile-schemas /usr/share/glib-2.0/schemas/
