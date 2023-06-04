@@ -16,18 +16,21 @@ po/tr_TR/$(PACKAGE).mo: po/tr_TR/$(PACKAGE).po
 clean:
 	rm -f ${PACKAGE}
 	rm -f po/tr_TR/$(PACKAGE).mo
+	rm -f po/it_IT/$(PACKAGE).mo
 
 uninstall:
 	rm -f /usr/local/bin/camoramic
 	rm -f /usr/share/glib-2.0/schemas/org.tga.camoramic.gschema.xml
 	rm -f /usr/share/locale/tr_TR/LC_MESSAGES/$(PACKAGE).mo
 	rm -f /usr/share/applications/camoramic.desktop
+	rm -f /usr/share/locale/it_IT/LC_MESSAGES/$(PACKAGE).mo
 	
 install: ${PACKAGE}
 	install -Dm0755 camoramic /usr/local/bin/camoramic
 	install -Dm0755 res/camoramic.desktop /usr/share/applications/camoramic.desktop
 	install -Dm0644 res/org.tga.camoramic.gschema.xml /usr/share/glib-2.0/schemas/org.tga.camoramic.gschema.xml
 	install -Dm0644 po/tr_TR/$(PACKAGE).mo /usr/share/locale/tr/LC_MESSAGES/$(PACKAGE).mo
+	install -Dm0644 po/it_IT/$(PACKAGE).mo /usr/share/locale/it_IT/LC_MESSAGES/$(PACKAGE).mo
 	glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 	
