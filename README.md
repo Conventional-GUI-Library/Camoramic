@@ -1,2 +1,2 @@
 # Camoramic
-An alternative for Cheese.
+An application for taking photos and videos from a camera.
