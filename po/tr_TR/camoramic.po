@@ -44,7 +44,7 @@ msgstr "Şimdiki cihaz: %s"
 #: src/alsautility.c:91 src/alsautility.c:92
 #, c-format
 msgid "Device %d on %s"
-msgstr "%d %s"
+msgstr "(%d. cihaz) %s"
 
 #: src/pipeline.c:567
 msgid "Dice"
