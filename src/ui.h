@@ -1,0 +1,11 @@
+extern int ui_created;
+extern GtkToolItem *prefbutton;
+extern GtkToolItem *recordvideobutton;
+extern GtkToolItem *takephotobutton;
+extern GtkToolItem *fxbutton;
+extern GtkListStore *pastphotos_store;
+extern GtkTreeIter pastphotos_iter;
+extern GdkPixbuf *videooverlayimage;
+void camoramic_ui_create();
+void camoramic_ui_update_statusbar(char *text);
+void camoramic_ui_show_error_dialog(char *message);

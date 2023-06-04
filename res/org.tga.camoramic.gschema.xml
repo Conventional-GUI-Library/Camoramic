@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.tga.camoramic" path="/org/tga/camoramic/">
+      <key type="i" name="audio-card">
+          <default>0</default>
+          <summary>The ALSA card to use</summary>
+          <description>The ALSA card to use</description>
+      </key>
+      <key type="i" name="audio-device">
+          <default>0</default>
+          <summary>The ALSA device to use</summary>
+          <description>The ALSA device to use</description>
+      </key>
+      <key type="i" name="video-device">
+          <default>0</default>
+          <summary>The /dev/video device to use</summary>
+          <description>The /dev/video device to use</description>
+      </key>
+      <key type="i" name="video-mode">
+          <default>0</default>
+          <summary>The video mode to use</summary>
+          <description>The video mode to use</description>
+      </key>
+      <key type="b" name="video-record-audio">
+          <default>true</default>
+          <summary>Record audio</summary>
+          <description>Record audio</description>
+      </key>
+      <key type="b" name="ui-statusbar-margins">
+          <default>true</default>
+          <summary>Draw statusbar margins</summary>
+          <description>Draw statusbar margins</description>
+      </key>
+      <key type="b" name="record-audio">
+          <default>true</default>
+          <summary>Record audio</summary>
+          <description>Record audio</description>
+      </key>
+      <key type="b" name="ui-seperators">
+          <default>true</default>
+          <summary>Draw seperators</summary>
+          <description>Draw seperators</description>
+      </key>
+      <key type="s" name="video-path">
+          <default>'default'</default>
+          <summary>Path for video</summary>
+          <description>Path for video</description>
+      </key>
+      <key type="s" name="photo-path">
+          <default>'default'</default>
+          <summary>Path for photos</summary>
+          <description>Path for photos</description>
+      </key>
+      <key type="i" name="photo-jpeg-amount">
+          <default>90</default>
+          <summary>JPEG compression amount</summary>
+          <description>JPEG compression amount</description>
+      </key>
+      <key type="i" name="video-container">
+          <default>0</default>
+          <summary>Video container</summary>
+          <description>Video container</description>
+      </key>
+      <key type="i" name="video-bitrate">
+          <default>256</default>
+          <summary>Video quality</summary>
+          <description>Video quality</description>
+      </key>
+      <key type="i" name="video-codec">
+          <default>0</default>
+          <summary>Video codec</summary>
+          <description>Video codec</description>
+      </key>
+      <key type="i" name="video-audio-codec">
+          <default>0</default>
+          <summary>Video audio codec</summary>
+          <description>Video audio codec</description>
+      </key>     
+      <key type="b" name="photo-jpeg">
+          <default>false</default>
+          <summary>Uses the JPEG format for photos when set to true, uses PNG otherwise</summary>
+          <description>Uses the JPEG format for photos when set to true, uses PNG otherwise</description>
+      </key>
+      <key type="as" name="past-media">
+          <default>[]</default>
+          <summary>Past media</summary>
+          <description>Past media</description>
+      </key>      
+  </schema>
+</schemalist>
+

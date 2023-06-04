@@ -1,0 +1,206 @@
+# Turkish translations for PACKAGE package.
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# user <user@debian>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-04 13:47-0400\n"
+"PO-Revision-Date: 2023-06-04 14:06-0400\n"
+"Last-Translator: user <user@debian>\n"
+"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: src/ui.c:946
+msgid "An utility for taking videos and photos from your webcam."
+msgstr "Web kamerasından fotoğraf ve video çekmek için bir uygulama."
+
+#: src/ui.c:662
+msgid "Audio codec"
+msgstr "Ses kodeği"
+
+#: src/ui.c:844
+msgid "Audio device"
+msgstr "Ses cihazı"
+
+#: src/camoramic.c:65 src/camoramic.c:66
+#, c-format
+msgid "Current Device: %s"
+msgstr "Şimdiki cihaz: %s"
+
+#: src/pipeline.c:69 src/pipeline.c:70 src/pipeline.c:404 src/pipeline.c:405
+#: src/ui.c:348 src/ui.c:349
+#, c-format
+msgid "Current device: %s"
+msgstr "Şimdiki cihaz: %s"
+
+#: src/alsautility.c:91 src/alsautility.c:92
+#, c-format
+msgid "Device %d on %s"
+msgstr "%d %s"
+
+#: src/pipeline.c:567
+msgid "Dice"
+msgstr "Doğra"
+
+#: src/pipeline.c:556
+msgid "Edge"
+msgstr "Uçları Renklendir"
+
+#: src/ui.c:128 src/ui.c:996
+msgid "Effects"
+msgstr "Efektler"
+
+#: src/ui.c:577
+msgid "Encoding"
+msgstr "Kodlama"
+
+#: src/pipeline.c:454
+msgid "Finalizing recording..."
+msgstr "Video kaydı durduruluyor..."
+
+#: src/pipeline.c:523
+msgid "Horizontal Flip"
+msgstr "Yatay Döndürme"
+
+#: src/pipeline.c:501
+msgid "Hulk"
+msgstr ""
+
+#: src/ui.c:737
+msgid "Input"
+msgstr "Giriş"
+
+#: src/pipeline.c:468
+msgid "Mauve"
+msgstr "Leylak"
+
+#: src/pipeline.c:479
+msgid "Monochrome"
+msgstr "Siyah Beyaz"
+
+#: src/ui.c:98
+msgid "None"
+msgstr "Hiçbiri"
+
+#: src/ui.c:686
+msgid "Output"
+msgstr "Çıkış"
+
+#: src/pipeline.c:100 src/pipeline.c:101
+#, c-format
+msgid "Photo '%s' taken"
+msgstr "Fotoğraf \"%s\" çekildi"
+
+#: src/ui.c:608
+msgid "Photo compression level"
+msgstr "Fotoğraf sıkıştırma düzeyi"
+
+#: src/ui.c:696
+msgid "Photo folder"
+msgstr "Fotoğraf klasörü"
+
+#: src/ui.c:587
+msgid "Photo format"
+msgstr "Fotoğraf dosya tipi"
+
+#: src/ui.c:906
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: src/ui.c:990
+msgid "Record Video"
+msgstr "Video Kaydet"
+
+#: src/ui.c:749
+msgid "Record audio"
+msgstr "Ses kaydet"
+
+#: src/pipeline.c:264 src/pipeline.c:265
+#, c-format
+msgid "Recording video '%s'"
+msgstr "Video \"%s\" kaydediliyor"
+
+#: src/pipeline.c:490
+msgid "Saturation"
+msgstr "Canlılığı Arttır"
+
+#: src/ui.c:1145
+msgid "Save File"
+msgstr "Dosyayı Kaydet"
+
+#: src/ui.c:710
+msgid "Select a folder"
+msgstr "Klasör seç"
+
+#: src/pipeline.c:534
+msgid "Shagadelic"
+msgstr "Shagadelik"
+
+#: src/ui.c:964
+msgid "Stop Recording"
+msgstr "Kaydetmeyi Bırak"
+
+#: src/ui.c:985
+msgid "Take Photo"
+msgstr "Fotoğraf Çek"
+
+#: src/v4l2utility.c:45
+msgid "Unable to create a V4L2 device provider."
+msgstr "V4L2 cihaz listesi objesi oluşturulamadı."
+
+#: src/misc.c:32
+msgid "Unable to create a canberra context."
+msgstr "Bir canberra objesi oluşturulamadı."
+
+#: src/pipeline.c:172 src/pipeline.c:173
+#, c-format
+msgid "Unable to create element: %s"
+msgstr "\"%s\" oluşturulamadı."
+
+#: src/camoramic.c:46
+msgid "Unable to find any video devices"
+msgstr "Herhangi bir video cihazı bulunamadı"
+
+#: src/pipeline.c:512
+msgid "Vertical Flip"
+msgstr "Dikey Döndürme"
+
+#: src/pipeline.c:545
+msgid "Vertigo"
+msgstr "Baş Dönmesi"
+
+#: src/ui.c:649
+msgid "Video bitrate (kbps)"
+msgstr "Video bit oranı (kbps)"
+
+#: src/ui.c:637
+msgid "Video codec"
+msgstr "Video kodeği"
+
+#: src/ui.c:621
+msgid "Video container"
+msgstr "Video kapsayıcısı"
+
+#: src/ui.c:758
+msgid "Video device"
+msgstr "Video cihazı"
+
+#: src/ui.c:707
+msgid "Video folder"
+msgstr "Video klasörü"
+
+#: src/ui.c:815
+msgid "Video mode"
+msgstr "Video modu"
+
+#: src/pipeline.c:578
+msgid "Warp"
+msgstr "Yamult"
