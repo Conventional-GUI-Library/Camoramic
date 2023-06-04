@@ -5,12 +5,15 @@ CFLAGS = -Wno-deprecated-declarations -g $(shell $(PKGCONFIG) --cflags gtk+-3.0 
 LIBS = $(shell $(PKGCONFIG) --libs gtk+-3.0 gthread-2.0 gstreamer-video-1.0 libcanberra alsa) -lm
 PACKAGE = camoramic
 
-all: ${PACKAGE} po/tr_TR/$(PACKAGE).mo
+all: ${PACKAGE} po/tr_TR/$(PACKAGE).mo  po/it_IT/$(PACKAGE).mo
 
 camoramic: $(SOURCES)
 	$(CC) $(^) -o ${PACKAGE} ${CFLAGS} ${LIBS}
 
 po/tr_TR/$(PACKAGE).mo: po/tr_TR/$(PACKAGE).po
+	msgfmt $(^) --output-file=$@ 
+
+po/it_IT/$(PACKAGE).mo: po/it_IT/$(PACKAGE).po
 	msgfmt $(^) --output-file=$@ 
 	
 clean:
