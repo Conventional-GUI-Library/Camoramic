@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Name=Camoramic
+GenericName=Webcam Booth
+GenericName[tr]=Web Kamerası Standı
+Comment=Take photos and record videos using your webcam.
+Comment[tr]=Web kameranızı kullanarak fotoğraf çekin ve video kaydedin.
+Keywords=photo;video;webcam;camera;selfie;
+Keywords[tr]=fotoğraf;video;görüntü;web kamerası;webcam;kamera;özçekim;selfie
+TryExec=camoramic
+Exec=camoramic
+Icon=camera-photo
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=AudioVideo;Video;Recorder;
