@@ -942,7 +942,7 @@ void camoramic_ui_show_about_dialog(GtkWidget *widget, gpointer data)
     action_area = gtk_dialog_get_action_area(GTK_DIALOG(dialog));
 
     gtk_about_dialog_set_program_name(GTK_ABOUT_DIALOG(dialog), "Camoramic");
-    gtk_about_dialog_set_copyright(GTK_ABOUT_DIALOG(dialog), "© TGA");
+    gtk_about_dialog_set_copyright(GTK_ABOUT_DIALOG(dialog), "© Jason Contoso");
     gtk_about_dialog_set_comments(GTK_ABOUT_DIALOG(dialog), _("An utility for taking videos and photos from your webcam."));
     gtk_about_dialog_set_logo( GTK_ABOUT_DIALOG(dialog), gtk_icon_theme_load_icon(gtk_icon_theme_get_default(), "camera-photo", 64, GTK_ICON_LOOKUP_USE_BUILTIN, NULL));
 
