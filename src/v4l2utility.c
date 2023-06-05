@@ -118,8 +118,11 @@ void camoramic_v4l2util_get_caps_fe(gpointer item, gpointer data)
     const char *path_string = gst_structure_get_string(deviceextrastruct, "device.path");
     if (atoi(&path_string[strlen(path_string) - 1]) == deviceint)
     {
-        GstCaps *caps = gst_caps_normalize(gst_device_get_caps(device));
+		GstCaps *unnormalized_caps = gst_device_get_caps(device);
+        GstCaps *caps = gst_caps_normalize(unnormalized_caps);
         caps_struct = gst_caps_get_structure(caps, caps_struct_no);
+        gst_caps_unref(caps);
+        gst_caps_unref(unnormalized_caps);
     }
     gst_structure_free(deviceextrastruct);
 }
