@@ -963,6 +963,7 @@ void camoramic_ui_record_button_pressed(GtkWidget *widget, gpointer data)
         gtk_tool_button_set_icon_name(GTK_TOOL_BUTTON(recordvideobutton), GTK_STOCK_MEDIA_STOP);
         gtk_tool_button_set_label(GTK_TOOL_BUTTON(recordvideobutton), _("Stop Recording"));
         gtk_widget_set_sensitive(GTK_WIDGET(prefbutton), FALSE);
+	gtk_widget_set_sensitive(GTK_WIDGET(fxbutton), FALSE);  
     }
     else
     {
