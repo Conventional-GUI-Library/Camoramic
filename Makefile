@@ -28,7 +28,7 @@ uninstall:
 	rm -f /usr/share/applications/camoramic.desktop
 	rm -f /usr/share/locale/it_IT/LC_MESSAGES/$(PACKAGE).mo
 	
-install: ${PACKAGE}
+install: all
 	install -Dm0755 camoramic /usr/local/bin/camoramic
 	install -Dm0755 res/camoramic.desktop /usr/share/applications/camoramic.desktop
 	install -Dm0644 res/org.tga.camoramic.gschema.xml /usr/share/glib-2.0/schemas/org.tga.camoramic.gschema.xml
