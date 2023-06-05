@@ -1,7 +1,7 @@
 CC ?= cc
 SOURCES = $(wildcard src/*.c)
 PKGCONFIG = $(shell which pkg-config)
-CFLAGS = -Wno-deprecated-declarations -g $(shell $(PKGCONFIG) --cflags gtk+-3.0 gthread-2.0 gstreamer-video-1.0 libcanberra alsa)
+CFLAGS = -Wno-deprecated-declarations -ggdb3 $(shell $(PKGCONFIG) --cflags gtk+-3.0 gthread-2.0 gstreamer-video-1.0 libcanberra alsa)
 LIBS = $(shell $(PKGCONFIG) --libs gtk+-3.0 gthread-2.0 gstreamer-video-1.0 libcanberra alsa) -lm
 PACKAGE = camoramic
 
