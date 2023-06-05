@@ -91,7 +91,7 @@ msgstr ""
 #: src/pipeline.c:100 src/pipeline.c:101
 #, c-format
 msgid "Photo '%s' taken"
-msgstr "Foto "%s" scattata"
+msgstr "Foto '%s' scattata"
 
 #: src/ui.c:608
 msgid "Photo compression level"
@@ -120,7 +120,7 @@ msgstr ""
 #: src/pipeline.c:264 src/pipeline.c:265
 #, c-format
 msgid "Recording video '%s'"
-msgstr "Registrazione del video "%s""
+msgstr "Registrazione del video '%s'"
 
 #: src/pipeline.c:490
 msgid "Saturation"
