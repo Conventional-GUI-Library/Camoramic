@@ -285,7 +285,7 @@ void camoramic_gst_record_start()
         camoramic_gst_check_element(record_audioqueue, "record_audioqueue");
         g_object_set(record_audioqueue, "max-size-buffers", 0, NULL);
         g_object_set(record_audioqueue, "max-size-bytes", 0, NULL);
-        g_object_set(record_audioqueue, "max-size-time", 20000000000, NULL);
+        g_object_set(record_audioqueue, "max-size-time", 10000000, NULL);
 
         record_audioconvert = gst_element_factory_make("audioconvert", NULL);
         camoramic_gst_check_element(record_audioconvert, "record_audioconvert");
@@ -314,7 +314,7 @@ void camoramic_gst_record_start()
     camoramic_gst_check_element(record_queue, "record_queue");
     g_object_set(record_queue, "max-size-buffers", 0, NULL);
     g_object_set(record_queue, "max-size-bytes", 0, NULL);
-    g_object_set(record_queue, "max-size-time", 20000000000, NULL);
+    g_object_set(record_queue, "max-size-time", 10000000, NULL);
 
     record_videoconvert = gst_element_factory_make("videoconvert", NULL);
     camoramic_gst_check_element(record_videoconvert, "record_videoconvert");
@@ -716,7 +716,7 @@ void camoramic_gst_create_pipeline()
     camoramic_gst_check_element(preview_queue, "preview_queue");
     g_object_set(preview_queue, "max-size-buffers", 0, NULL);
     g_object_set(preview_queue, "max-size-bytes", 0, NULL);
-    g_object_set(preview_queue, "max-size-time", 20000000000, NULL);
+    g_object_set(preview_queue, "max-size-time", 10000000, NULL);
 
     preview_videoconvert = gst_element_factory_make("videoconvert", NULL);
     camoramic_gst_check_element(preview_queue, "preview_queue");
@@ -736,7 +736,7 @@ void camoramic_gst_create_pipeline()
     camoramic_gst_check_element(pixbuf_queue, "pixbuf_queue");
     g_object_set(pixbuf_queue, "max-size-buffers", 0, NULL);
     g_object_set(pixbuf_queue, "max-size-bytes", 0, NULL);
-    g_object_set(pixbuf_queue, "max-size-time", 20000000000, NULL);
+    g_object_set(pixbuf_queue, "max-size-time", 10000000, NULL);
 
     gst_bin_add_many(GST_BIN(pipeline), src, capsfilter, decoder, videoconvert, frameratefilter, tee, pixbuf_queue,
                      pixbuf_sink, preview_queue, preview_videoconvert, preview_overlay, preview_sink, NULL);
