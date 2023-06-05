@@ -19,15 +19,15 @@ msgstr ""
 
 #: src/ui.c:946
 msgid "An utility for taking videos and photos from your webcam."
-msgstr ""
+msgstr "Un utilità per scattare foto e video dalla tua webcam."
 
 #: src/ui.c:662
 msgid "Audio codec"
-msgstr ""
+msgstr "Codec Audio"
 
 #: src/ui.c:844
 msgid "Audio device"
-msgstr ""
+msgstr "Dispositivo Audio"
 
 #: src/pipeline.c:69 src/pipeline.c:70 src/pipeline.c:404 src/pipeline.c:405
 #: src/ui.c:348 src/ui.c:349
@@ -42,117 +42,117 @@ msgstr "Dispositivo %d su %s"
 
 #: src/pipeline.c:567
 msgid "Dice"
-msgstr ""
+msgstr "Cubetti"
 
 #: src/pipeline.c:556
 msgid "Edge"
-msgstr ""
+msgstr "Bordo"
 
 #: src/ui.c:128 src/ui.c:996
 msgid "Effects"
-msgstr ""
+msgstr "Effetti"
 
 #: src/ui.c:577
 msgid "Encoding"
-msgstr ""
+msgstr "Codifica"
 
 #: src/pipeline.c:454
 msgid "Finalizing recording..."
-msgstr ""
+msgstr "Finalizzazione della registrazione..."
 
 #: src/pipeline.c:523
 msgid "Horizontal Flip"
-msgstr ""
+msgstr "Capovolgi in orizzontale"
 
 #: src/pipeline.c:501
 msgid "Hulk"
-msgstr ""
+msgstr "Hulk"
 
 #: src/ui.c:737
 msgid "Input"
-msgstr ""
+msgstr "Ingresso"
 
 #: src/pipeline.c:468
 msgid "Mauve"
-msgstr ""
+msgstr "Malva"
 
 #: src/pipeline.c:479
 msgid "Monochrome"
-msgstr ""
+msgstr "Monocromatico"
 
 #: src/ui.c:98
 msgid "None"
-msgstr ""
+msgstr "Nessuno"
 
 #: src/ui.c:686
 msgid "Output"
-msgstr ""
+msgstr "Uscita"
 
 #: src/pipeline.c:100 src/pipeline.c:101
 #, c-format
 msgid "Photo '%s' taken"
-msgstr "Foto "%s" scattata"
+msgstr "Foto '%s' scattata"
 
 #: src/ui.c:608
 msgid "Photo compression level"
-msgstr ""
+msgstr "Livello compressione foto"
 
 #: src/ui.c:696
 msgid "Photo folder"
-msgstr ""
+msgstr "Cartella foto"
 
 #: src/ui.c:587
 msgid "Photo format"
-msgstr ""
+msgstr "Formato foto"
 
 #: src/ui.c:906
 msgid "Preferences"
-msgstr ""
+msgstr "Preferenze"
 
 #: src/ui.c:990
 msgid "Record Video"
-msgstr ""
+msgstr "Registra Video"
 
 #: src/ui.c:749
 msgid "Record audio"
-msgstr ""
+msgstr "Registra audio"
 
 #: src/pipeline.c:264 src/pipeline.c:265
 #, c-format
 msgid "Recording video '%s'"
-msgstr "Registrazione del video "%s""
+msgstr "Registrazione del video '%s'"
 
 #: src/pipeline.c:490
 msgid "Saturation"
-msgstr ""
+msgstr "Saturazione"
 
 #: src/ui.c:1145
 msgid "Save File"
-msgstr ""
+msgstr "Salva File"
 
 #: src/ui.c:710
 msgid "Select a folder"
-msgstr ""
+msgstr "Seleziona una cartella"
 
 #: src/pipeline.c:534
 msgid "Shagadelic"
-msgstr ""
+msgstr "Shagadelico"
 
 #: src/ui.c:964
 msgid "Stop Recording"
-msgstr ""
+msgstr "Ferma Registrazione"
 
 #: src/ui.c:985
 msgid "Take Photo"
-msgstr ""
+msgstr "Scatta Foto"
 
 #: src/v4l2utility.c:45
 msgid "Unable to create a V4L2 device provider."
-msgstr ""
+msgstr "Impossibile creare un fornitore di dispositivi V4L2 "
 
 #: src/misc.c:32
 msgid "Unable to create a canberra context."
-msgstr ""
+msgstr "Impossibile creare un contesto di canberra"
 
 #: src/pipeline.c:172 src/pipeline.c:173
 #, c-format
@@ -161,40 +161,40 @@ msgstr "Impossibile creare l'elemento: %s"
 
 #: src/camoramic.c:46
 msgid "Unable to find any video devices"
-msgstr ""
+msgstr "Impossibile trovare un dispositivo video"
 
 #: src/pipeline.c:512
 msgid "Vertical Flip"
-msgstr ""
+msgstr "Ruota in verticale"
 
 #: src/pipeline.c:545
 msgid "Vertigo"
-msgstr ""
+msgstr "Vertigo"
 
 #: src/ui.c:649
 msgid "Video bitrate (kbps)"
-msgstr ""
+msgstr "Bitrate Video (kbps)"
 
 #: src/ui.c:637
 msgid "Video codec"
-msgstr ""
+msgstr "Codec Video"
 
 #: src/ui.c:621
 msgid "Video container"
-msgstr ""
+msgstr "Contenitore Video"
 
 #: src/ui.c:758
 msgid "Video device"
-msgstr ""
+msgstr "Dispositivo Video"
 
 #: src/ui.c:707
 msgid "Video folder"
-msgstr ""
+msgstr "Cartella Video"
 
 #: src/ui.c:815
 msgid "Video mode"
-msgstr ""
+msgstr "Modalità Video"
 
 #: src/pipeline.c:578
 msgid "Warp"
-msgstr ""
+msgstr "Deforma"

@@ -120,6 +120,7 @@ void camoramic_v4l2util_get_caps_fe(gpointer item, gpointer data)
     {
         GstCaps *caps = gst_caps_normalize(gst_device_get_caps(device));
         caps_struct = gst_caps_get_structure(caps, caps_struct_no);
+        //gst_caps_unref(caps);
     }
     gst_structure_free(deviceextrastruct);
 }
@@ -127,8 +128,10 @@ void camoramic_v4l2util_get_caps_fe(gpointer item, gpointer data)
 GstCaps *camoramic_v4l2util_get_caps(int device, int ccaps)
 {
     caps_struct_no = ccaps;
-    g_list_foreach(gst_device_provider_get_devices(v4l2provider), camoramic_v4l2util_get_caps_fe, &device);
-    return gst_caps_new_full(gst_structure_copy(caps_struct), NULL);
+    GList *device_list = gst_device_provider_get_devices(v4l2provider);
+    g_list_foreach(device_list, camoramic_v4l2util_get_caps_fe, &device);
+	g_list_free_full(g_steal_pointer(&device_list), g_object_unref);    
+	return gst_caps_new_full(gst_structure_copy(caps_struct), NULL);
 }
 
 char *camoramic_v4l2util_get_human_string_caps(int device, int ccaps)
@@ -136,7 +139,9 @@ char *camoramic_v4l2util_get_human_string_caps(int device, int ccaps)
 	int width, height, framerate, framerate_denom;
 	char* string = malloc(512);
     caps_struct_no = ccaps;
-    g_list_foreach(gst_device_provider_get_devices(v4l2provider), camoramic_v4l2util_get_caps_fe, &device);
+    GList *device_list = gst_device_provider_get_devices(v4l2provider);
+    g_list_foreach(device_list, camoramic_v4l2util_get_caps_fe, &device);
+	g_list_free_full(g_steal_pointer(&device_list), g_object_unref);
     gst_structure_get_int(caps_struct, "width", &width);
     gst_structure_get_int(caps_struct, "height", &height);
     gst_structure_get_fraction(caps_struct, "framerate", &framerate, &framerate_denom);
@@ -153,7 +158,9 @@ int camoramic_v4l2util_get_caps_framerate(int device, int ccaps)
 {
 	int framerate, framerate_denom;
     caps_struct_no = ccaps;
-    g_list_foreach(gst_device_provider_get_devices(v4l2provider), camoramic_v4l2util_get_caps_fe, &device);
+    GList *device_list = gst_device_provider_get_devices(v4l2provider);
+    g_list_foreach(device_list, camoramic_v4l2util_get_caps_fe, &device);
+	g_list_free_full(g_steal_pointer(&device_list), g_object_unref);
     gst_structure_get_fraction(caps_struct, "framerate", &framerate, &framerate_denom);
     if (framerate_denom == 0) {
 		return 0;
@@ -171,13 +178,17 @@ char *camoramic_v4l2util_device_to_string(int device)
 
 char *camoramic_v4l2util_get_friendly_name(int device)
 {
-    g_list_foreach(gst_device_provider_get_devices(v4l2provider), camoramic_v4l2util_get_friendly_name_fe, &device);
+    GList *device_list = gst_device_provider_get_devices(v4l2provider);
+    g_list_foreach(device_list, camoramic_v4l2util_get_friendly_name_fe, &device);
+	g_list_free_full(g_steal_pointer(&device_list), g_object_unref);
     return device_friendly_name;
 }
 
 int camoramic_v4l2util_get_device_count()
 {
     devicecount = 0;
-    g_list_foreach(gst_device_provider_get_devices(v4l2provider), camoramic_v4l2util_get_device_count_fe, NULL);
+    GList *device_list = gst_device_provider_get_devices(v4l2provider);
+    g_list_foreach(device_list, camoramic_v4l2util_get_device_count_fe, NULL);
+	g_list_free_full(g_steal_pointer(&device_list), g_object_unref);
     return devicecount;
 }
