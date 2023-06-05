@@ -399,7 +399,9 @@ gboolean camoramic_gst_record_stop_bus_call(GstBus *bus, GstMessage *msg, gpoint
     switch (GST_MESSAGE_TYPE(msg))
     {
     case GST_MESSAGE_EOS: {
-        gst_element_set_state(pipeline, GST_STATE_NULL);
+		gst_element_set_state (pipeline, GST_STATE_PAUSED);
+		gst_element_set_state (pipeline, GST_STATE_READY);
+		gst_element_set_state (pipeline, GST_STATE_NULL);
         char *device_name = camoramic_v4l2util_get_friendly_name(current_device);
         char *statusbar_text = malloc(strlen(_("Current device: %s")) + strlen(device_name) + 1);
         sprintf(statusbar_text, _("Current device: %s"), device_name);
