@@ -117,19 +117,13 @@ void camoramic_ui_fx_dialog_killed(GtkWidget *widget, gpointer data)
 
 void camoramic_ui_show_fx_dialog(GtkWidget *widget, gpointer data)
 {
-
     GtkWidget *content_area;
     GtkWidget *action_area;
     GtkWidget *button_alignment;
     GtkWidget *scrolled_window;
-    GtkWidget *apply_button;
 
-    fx_dialog = gtk_dialog_new();
-    gtk_window_set_title(GTK_WINDOW(fx_dialog), _("Effects"));
-    gtk_window_set_modal(GTK_WINDOW(fx_dialog), TRUE);
-    gtk_window_set_transient_for(GTK_WINDOW(fx_dialog), GTK_WINDOW(window));
+    fx_dialog = gtk_dialog_new_with_buttons(_("Effects"), GTK_WINDOW(window), GTK_DIALOG_MODAL, GTK_STOCK_APPLY, GTK_RESPONSE_ACCEPT, NULL);
     content_area = gtk_dialog_get_content_area(GTK_DIALOG(fx_dialog));
-    action_area = gtk_dialog_get_action_area(GTK_DIALOG(fx_dialog));
 
     scrolled_window = gtk_scrolled_window_new(NULL, NULL);
     gtk_container_add(GTK_CONTAINER(content_area), scrolled_window);
@@ -153,16 +147,12 @@ void camoramic_ui_show_fx_dialog(GtkWidget *widget, gpointer data)
     gtk_tree_path_append_index(path, fx_current);
     gtk_icon_view_select_path(GTK_ICON_VIEW(fx_iconview), path);
     gtk_tree_path_free(path);
-    
-    button_alignment = gtk_alignment_new(1, 1, 0, 0);
-    gtk_container_add(GTK_CONTAINER(action_area), button_alignment);
 
-    apply_button = gtk_button_new_from_stock(GTK_STOCK_APPLY);
-    gtk_container_add(GTK_CONTAINER(button_alignment), apply_button);
-    g_signal_connect(G_OBJECT(apply_button), "clicked", G_CALLBACK(camoramic_ui_kill_widget), fx_dialog);
     g_signal_connect(fx_dialog, "destroy", G_CALLBACK(camoramic_ui_fx_dialog_killed), NULL);
 
-    gtk_widget_show_all(fx_dialog);
+	gtk_widget_show_all(scrolled_window);
+    gtk_dialog_run(GTK_DIALOG(fx_dialog));
+    gtk_widget_destroy(fx_dialog);
 }
 
 void camoramic_ui_video_device_switched(GtkComboBox *self, gpointer user_data)
@@ -898,16 +888,9 @@ void camoramic_ui_show_settings_dialog(GtkWidget *widget, gpointer data)
 		return;
 	}
     GtkWidget *content_area;
-    GtkWidget *action_area;
-    GtkWidget *button_alignment;
-    GtkWidget *close_button;
 
-    settings_dialog = gtk_dialog_new();
-    gtk_window_set_title(GTK_WINDOW(settings_dialog), _("Preferences"));
-    gtk_window_set_modal(GTK_WINDOW(settings_dialog), TRUE);
-    gtk_window_set_transient_for(GTK_WINDOW(settings_dialog), GTK_WINDOW(window));
+    settings_dialog = gtk_dialog_new_with_buttons(_("Preferences"), GTK_WINDOW(window), GTK_DIALOG_MODAL, GTK_STOCK_CLOSE, GTK_RESPONSE_ACCEPT, NULL);
     content_area = gtk_dialog_get_content_area(GTK_DIALOG(settings_dialog));
-    action_area = gtk_dialog_get_action_area(GTK_DIALOG(settings_dialog));
 
     notebook = gtk_notebook_new();
     gtk_notebook_set_tab_pos(GTK_NOTEBOOK(notebook), GTK_POS_TOP);
@@ -922,15 +905,11 @@ void camoramic_ui_show_settings_dialog(GtkWidget *widget, gpointer data)
     camoramic_ui_create_settings_output_tab();
     camoramic_ui_create_settings_encoding_tab();
 
-    button_alignment = gtk_alignment_new(1, 1, 0, 0);
-    gtk_container_add(GTK_CONTAINER(action_area), button_alignment);
-
-    close_button = gtk_button_new_from_stock(GTK_STOCK_CLOSE);
-    gtk_container_add(GTK_CONTAINER(button_alignment), close_button);
-    g_signal_connect(G_OBJECT(close_button), "clicked", G_CALLBACK(camoramic_ui_kill_widget), settings_dialog);
     g_signal_connect(settings_dialog, "destroy", G_CALLBACK(camoramic_ui_settings_dialog_killed), NULL);
 
-    gtk_widget_show_all(settings_dialog);
+    gtk_widget_show_all(content_area);
+    gtk_dialog_run(GTK_DIALOG(settings_dialog));
+    gtk_widget_destroy(settings_dialog);
 }
 
 void camoramic_ui_show_about_dialog(GtkWidget *widget, gpointer data)
