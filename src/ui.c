@@ -1110,10 +1110,10 @@ void camoramic_ui_create_statusbar()
 
 void camoramic_ui_open_currently_selected(GtkWidget *widget, gpointer data) {
 	char* selected_item = g_list_nth_data(past_media, current_selected_item);
-    char* cmd = malloc(strlen("xdg-open ")+strlen(selected_item)+1);
-    strcpy(cmd, "xdg-open ");
+    char* cmd = malloc(strlen("file://")+strlen(selected_item)+1);
+    strcpy(cmd, "file://");
 	strcat(cmd, selected_item);
-    system(cmd);	
+    g_app_info_launch_default_for_uri(cmd, NULL, NULL);	
     free(cmd);
 }
 
