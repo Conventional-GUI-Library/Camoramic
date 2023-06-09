@@ -1,0 +1,201 @@
+# German translations for PACKAGE package.
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# user <user@debian>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-04 13:47-0400\n"
+"PO-Revision-Date: 2023-06-09 12:01-0400\n"
+"Last-Translator: user <user@debian>\n"
+"Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: src/ui.c:946
+msgid "An utility for taking videos and photos from your webcam."
+msgstr "Ein Dienstprogramm zum Aufnehmen von Videos und Fotos von Ihrer Webcam."
+
+#: src/ui.c:662
+msgid "Audio codec"
+msgstr "Audioverschlüsserung"
+
+#: src/ui.c:844
+msgid "Audio device"
+msgstr "Audiogerät"
+
+#: src/pipeline.c:69 src/pipeline.c:70 src/pipeline.c:404 src/pipeline.c:405
+#: src/ui.c:348 src/ui.c:349
+#, c-format
+msgid "Current device: %s"
+msgstr "Gebrauchliches Gerät: %s"
+
+#: src/alsautility.c:91 src/alsautility.c:92
+#, c-format
+msgid "Device %d on %s"
+msgstr "Gerät %d auf %s"
+
+#: src/pipeline.c:567
+msgid "Dice"
+msgstr "Würfel"
+
+#: src/pipeline.c:556
+msgid "Edge"
+msgstr "Rand"
+
+#: src/ui.c:128 src/ui.c:996
+msgid "Effects"
+msgstr "Filter"
+
+#: src/ui.c:577
+msgid "Encoding"
+msgstr "Verschlüsserung"
+
+#: src/pipeline.c:454
+msgid "Finalizing recording..."
+msgstr "Aufzeichnung stoppen..."
+
+#: src/pipeline.c:523
+msgid "Horizontal Flip"
+msgstr "Horizontal Schnippen"
+
+#: src/pipeline.c:501
+msgid "Hulk"
+msgstr "Hulk"
+
+#: src/ui.c:737
+msgid "Input"
+msgstr "Input"
+
+#: src/pipeline.c:468
+msgid "Mauve"
+msgstr "Flieder"
+
+#: src/pipeline.c:479
+msgid "Monochrome"
+msgstr "Monochrom"
+
+#: src/ui.c:98
+msgid "None"
+msgstr "Keine"
+
+#: src/ui.c:686
+msgid "Output"
+msgstr "Output"
+
+#: src/pipeline.c:100 src/pipeline.c:101
+#, c-format
+msgid "Photo '%s' taken"
+msgstr "Foto '%s' wird gespeichert"
+
+#: src/ui.c:608
+msgid "Photo compression level"
+msgstr "Foto komprimierungsstufe"
+
+#: src/ui.c:696
+msgid "Photo folder"
+msgstr "Foto ordner"
+
+#: src/ui.c:587
+msgid "Photo format"
+msgstr "Foto format"
+
+#: src/ui.c:906
+msgid "Preferences"
+msgstr "Vorlieben"
+
+#: src/ui.c:990
+msgid "Record Video"
+msgstr "Video Speichern"
+
+#: src/ui.c:749
+msgid "Record audio"
+msgstr "Audio Speichern"
+
+#: src/pipeline.c:264 src/pipeline.c:265
+#, c-format
+msgid "Recording video '%s'"
+msgstr "Video wird aufgezeichnet '%s'"
+
+#: src/pipeline.c:490
+msgid "Saturation"
+msgstr "Sattheit"
+
+#: src/ui.c:1145
+msgid "Save File"
+msgstr "Datei Speichern"
+
+#: src/ui.c:710
+msgid "Select a folder"
+msgstr "Ordner wählen"
+
+#: src/pipeline.c:534
+msgid "Shagadelic"
+msgstr "Shagadelic"
+
+#: src/ui.c:964
+msgid "Stop Recording"
+msgstr "Speichern stoppen"
+
+#: src/ui.c:985
+msgid "Take Photo"
+msgstr "Foto drehen"
+
+#: src/v4l2utility.c:45
+msgid "Unable to create a V4L2 device provider."
+msgstr "Es kann kein V4L2-Geräteanbieter erstellt werden."
+
+#: src/misc.c:32
+msgid "Unable to create a canberra context."
+msgstr "Es kann kein Canberra-Kontext erstellt werden."
+
+#: src/pipeline.c:172 src/pipeline.c:173
+#, c-format
+msgid "Unable to create element: %s"
+msgstr "Element kann nicht erstellt werden: %s"
+
+#: src/camoramic.c:46
+msgid "Unable to find any video devices"
+msgstr "Es konnten keine Videogeräte gefunden werden"
+
+#: src/pipeline.c:512
+msgid "Vertical Flip"
+msgstr "Vertikal schnippen"
+
+#: src/pipeline.c:545
+msgid "Vertigo"
+msgstr "Vertigo"
+
+#: src/ui.c:649
+msgid "Video bitrate (kbps)"
+msgstr "Video bitrate (kbit/s)"
+
+#: src/ui.c:637
+msgid "Video codec"
+msgstr "Videoverschlüsserung"
+
+#: src/ui.c:621
+msgid "Video container"
+msgstr "Videocontainer"
+
+#: src/ui.c:758
+msgid "Video device"
+msgstr "Videogerät"
+
+#: src/ui.c:707
+msgid "Video folder"
+msgstr "Videoordner"
+
+#: src/ui.c:815
+msgid "Video mode"
+msgstr "Video modus"
+
+#: src/pipeline.c:578
+msgid "Warp"
+msgstr "Verziehen"
